@@ -42,7 +42,7 @@ const REPEAT_COUNT = 40;
 
 // ⭐ 초기 안내 멘트 삽입
 const initialDiv = document.createElement("div");
-initialDiv.textContent = "❓ 뭐 먹을까?";
+initialDiv.textContent = "뭐 먹지?";
 slotStrip.appendChild(initialDiv);
 
 // 🔨 실제 슬롯 strip 구성
