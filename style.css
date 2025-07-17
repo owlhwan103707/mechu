@@ -73,16 +73,7 @@ h1 {
   background: #222;
 }
 
-.slot-indicator {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: #ff0000;
-  transform: translateY(-50%);
-  z-index: 10;
-}
+.slot-indicator { display: none;}
 
 button {
   background: linear-gradient(to right, #ff0000, #ff6600);
