@@ -1,12 +1,12 @@
 const MENU_ITEMS = [
-  { icon: "🍜", label: "라면" },
-  { icon: "🍙", label: "김밥" },
-  { icon: "🍗", label: "치킨" },
-  { icon: "🥗", label: "샐러드" },
-  { icon: "🍛", label: "카레" },
-  { icon: "🍲", label: "마라탕" },
-  { icon: "🍝", label: "파스타" },
-  { icon: "🍱", label: "삼겹살" },
+  { icon: "😍", label: "라면" },
+  { icon: "😍", label: "김밥" },
+  { icon: "😍", label: "치킨" },
+  { icon: "😍", label: "샐러드" },
+  { icon: "😍", label: "카레" },
+  { icon: "😍", label: "마라탕" },
+  { icon: "😍", label: "파스타" },
+  { icon: "😍", label: "삼겹살" },
   { icon: "😍", label: "김치찜" },
   { icon: "😍", label: "묵사발" },
   { icon: "😍", label: "비냉+고기" }
@@ -57,8 +57,8 @@ function showResult(text) {
   resultEl.textContent = `그럼 우리 오늘 ${text}! 먹자`;
 
 
-  resultEl.classList.remove("celebrate"); // 중복 방지
-  void resultEl.offsetWidth; // 강제 리플로우로 애니메이션 재적용
+  resultEl.classList.remove("celebrate"); 
+  void resultEl.offsetWidth; 
   resultEl.classList.add("celebrate");
 
   resultEl.style.opacity = 0;
@@ -66,7 +66,7 @@ function showResult(text) {
     resultEl.style.opacity = 1;
   });
 
-  fireConfetti(); // 🎉 폭죽 실행
+  fireConfetti();
 }
 
 
@@ -96,8 +96,8 @@ function spin() {
 
   const onDone = () => {
     slotStrip.removeEventListener("transitionend", onDone);
-    showResult(pickItem.label);       // ⭐️ 결과 보여주기
-    fireConfetti();                   // 💥 폭죽 효과 여기로 옮기기
+    showResult(pickItem.label);       
+    fireConfetti();
     isSpinning = false;
     spinBtn.disabled = false;
   };
