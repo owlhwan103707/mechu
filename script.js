@@ -56,6 +56,7 @@ function fireConfetti() {
 function showResult(text) {
   resultEl.textContent = `그럼 우리 오늘 ${text}! 먹자`;
 
+
   resultEl.classList.remove("celebrate"); // 중복 방지
   void resultEl.offsetWidth; // 강제 리플로우로 애니메이션 재적용
   resultEl.classList.add("celebrate");
