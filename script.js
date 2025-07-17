@@ -37,12 +37,18 @@ function getSlotMetrics() {
 }
 
 function fireConfetti() {
-  confetti({
-    particleCount: 150,
-    spread: 70,
-    origin: { y: 0.6 }
-  });
+  console.log("🔥 fireConfetti 호출됨");
+  if (typeof confetti === "function") {
+    confetti({
+      particleCount: 150,
+      spread: 70,
+      origin: { y: 0.6 }
+    });
+  } else {
+    console.warn("⚠️ confetti 함수가 정의되지 않았습니다.");
+  }
 }
+
 
 function showResult(text) {
   resultEl.textContent = `오늘의 메뉴는 🍽 ${text}!`;
@@ -93,3 +99,10 @@ function spin() {
   };
   slotStrip.addEventListener("transitionend", onDone);
 }
+
+
+spinBtn.addEventListener("dblclick", () => {
+  console.log("💥 직접 폭죽 테스트");
+  fireConfetti();
+});
+
