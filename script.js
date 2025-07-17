@@ -39,6 +39,13 @@ const spinBtn = document.querySelector("button");
 let isSpinning = false
 const REPEAT_COUNT = 40;
 
+
+// ⭐ 초기 안내 멘트 삽입
+const initialDiv = document.createElement("div");
+initialDiv.textContent = "❓ 뭐 먹을까?";
+slotStrip.appendChild(initialDiv);
+
+// 🔨 실제 슬롯 strip 구성
 function buildStrip() {
   const frag = document.createDocumentFragment();
   for (let r = 0; r < REPEAT_COUNT; r++) {
