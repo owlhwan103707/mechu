@@ -1,15 +1,17 @@
 const MENU_ITEMS = [
-  { icon: "😍", label: "라면" },
-  { icon: "😍", label: "김밥" },
-  { icon: "😍", label: "치킨" },
-  { icon: "😍", label: "샐러드" },
-  { icon: "😍", label: "카레" },
+  { icon: "😍", label: "라면에 계란" },
+  { icon: "😍", label: "김밥천국" },
+  { icon: "😍", label: "교촌치킨" },
+  { icon: "😍", label: "풀떼기" },
+  { icon: "😍", label: "3분카레" },
   { icon: "😍", label: "마라탕" },
   { icon: "😍", label: "파스타" },
   { icon: "😍", label: "삼겹살" },
   { icon: "😍", label: "김치찜" },
   { icon: "😍", label: "묵사발" },
-  { icon: "😍", label: "비냉+고기" }
+  { icon: "😍", label: "비냉+고기" },
+  { icon: "😍", label: "든든한 국밥!" },
+  { icon: "😍", label: "그리운 집밥 ㅠㅠ" }
 ];
 
 const slotStrip = document.getElementById("slot");
