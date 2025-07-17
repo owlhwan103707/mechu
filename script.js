@@ -1,5 +1,5 @@
 const MENU_ITEMS = [
-  { icon: "😍", label: "라면" },
+  { icon: "😍", label: "라면에 파송송 계란탁!" },
   { icon: "😍", label: "물에 밥 비벼" },
   { icon: "😍", label: "김밥천국" },
   { icon: "😍", label: "교촌치킨" },
@@ -36,7 +36,9 @@ const MENU_ITEMS = [
   { icon: "😍", label: "쭈꾸미 볶음" },
   { icon: "😍", label: "콩나물 불고기" },
   { icon: "😍", label: "몸도 으슬으슬하니 죽" },
-  { icon: "😍", label: "명량핫도그!" }
+  { icon: "😍", label: "명랑핫도그!" },
+  { icon: "😍", label: "타코야끼" },
+  { icon: "😍", label: "닭볶음탕" }
 ];
 
 const slotStrip = document.getElementById("slot");
