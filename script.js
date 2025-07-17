@@ -1,5 +1,6 @@
 const MENU_ITEMS = [
-  { icon: "😍", label: "라면에 계란" },
+  { icon: "😍", label: "라면" },
+  { icon: "😍", label: "물에 밥 비비러" },
   { icon: "😍", label: "김밥천국" },
   { icon: "😍", label: "교촌치킨" },
   { icon: "😍", label: "풀떼기" },
