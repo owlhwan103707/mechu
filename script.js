@@ -114,28 +114,15 @@ function spin() {
     slotStrip.style.transform = `translateY(${targetY}px)`;
   });
 
-
-const onDone = () => {
-  slotStrip.removeEventListener("transitionend", onDone);
-
-  const { itemHeight, windowHeight } = getSlotMetrics();
-  const centerY = windowHeight / 2;
-
-  const items = Array.from(slotStrip.children);
-  const slotTop = slotStrip.getBoundingClientRect().top;
-
-  const centeredItem = items.find(el => {
-    const elTop = el.getBoundingClientRect().top - slotTop;
-    return elTop <= centerY && elTop + itemHeight > centerY;
-  });
-
-  const resultText = centeredItem?.textContent || "메뉴를 찾을 수 없음";
-  showResult(resultText.replace(/^[^\s]+\s/, '')); // 이모지 제거하고 label만
-  fireConfetti();
-  isSpinning = false;
-  spinBtn.disabled = false;
-};
-
+  const onDone = () => {
+    slotStrip.removeEventListener("transitionend", onDone);
+    showResult(pickItem.label);       
+    fireConfetti();
+    isSpinning = false;
+    spinBtn.disabled = false;
+  };
+  slotStrip.addEventListener("transitionend", onDone);
+}
 
 //무슨 폭죽 오류인진 몰라도 더블클릭시 폭죽 나오게 설정
 spinBtn.addEventListener("dblclick", () => {
