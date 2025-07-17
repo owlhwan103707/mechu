@@ -67,13 +67,17 @@ button:hover {
 }
 
 #result {
-  margin-top: 25px;
-  font-size: 20px;
-  color: #d84315;
+  margin-top: 35px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #e64a19;
   opacity: 0;
-  transition: opacity 0.6s ease;
+  transform: scale(0.9);
+  transition: opacity 0.6s ease, transform 0.4s ease;
 }
 
 .fade-in {
   opacity: 1 !important;
+  transform: scale(1) !important;
 }
+
