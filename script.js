@@ -36,13 +36,29 @@ function getSlotMetrics() {
   return { itemHeight, windowHeight };
 }
 
+function fireConfetti() {
+  confetti({
+    particleCount: 150,
+    spread: 70,
+    origin: { y: 0.6 }
+  });
+}
+
 function showResult(text) {
   resultEl.textContent = `오늘의 메뉴는 🍽 ${text}!`;
+
+  resultEl.classList.remove("celebrate"); // 중복 방지
+  void resultEl.offsetWidth; // 강제 리플로우로 애니메이션 재적용
+  resultEl.classList.add("celebrate");
+
   resultEl.style.opacity = 0;
   requestAnimationFrame(() => {
     resultEl.style.opacity = 1;
   });
+
+  fireConfetti(); // 🎉 폭죽 실행
 }
+
 
 function spin() {
   if (isSpinning) return;
