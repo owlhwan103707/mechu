@@ -29,7 +29,8 @@ const MENU_ITEMS = [
   { icon: "😍", label: "깨스깨스동깨스" },
   { icon: "😍", label: "성찬식당" },
   { icon: "😍", label: "라멘" },
-  { icon: "😍", label: "햄버억" }
+  { icon: "😍", label: "햄버거" },
+  { icon: "😍", label: "소고기!!" }
 ];
 
 const slotStrip = document.getElementById("slot");
