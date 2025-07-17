@@ -75,7 +75,7 @@ function fireConfetti() {
 
 
 function showResult(text) {
-  resultEl.textContent = `그럼 우리 오늘 ${text}! 먹자`;
+  resultEl.textContent = 그럼 우리 오늘 ${text}! 먹자;
 
 
   resultEl.classList.remove("celebrate"); 
@@ -111,8 +111,8 @@ function spin() {
 
   requestAnimationFrame(() => {
     const spinDuration = 2500 + Math.random() * 1000;
-    slotStrip.style.transition = `transform ${spinDuration}ms cubic-bezier(0.2, 0.8, 0.2, 1)`;
-    slotStrip.style.transform = `translateY(${targetY}px)`;
+    slotStrip.style.transition = transform ${spinDuration}ms cubic-bezier(0.2, 0.8, 0.2, 1);
+    slotStrip.style.transform = translateY(${targetY}px);
   });
 
   const onDone = () => {
@@ -130,4 +130,3 @@ spinBtn.addEventListener("dblclick", () => {
   console.log("💥 직접 폭죽 테스트");
   fireConfetti();
 });
-
