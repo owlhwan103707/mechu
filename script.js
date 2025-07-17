@@ -44,12 +44,14 @@ function buildStrip() {
   for (let r = 0; r < REPEAT_COUNT; r++) {
     MENU_ITEMS.forEach(item => {
       const div = document.createElement("div");
-      div.textContent = ${item.icon} ${item.label};
+      div.textContent = `${item.icon} ${item.label}`;  // ✅ 백틱으로 감싸기
       frag.appendChild(div);
     });
   }
   slotStrip.appendChild(frag);
 }
+
+
 buildStrip();
 
 function getSlotMetrics() {
@@ -75,11 +77,10 @@ function fireConfetti() {
 
 
 function showResult(text) {
-  resultEl.textContent = 그럼 우리 오늘 ${text}! 먹자;
+  resultEl.textContent = `그럼 우리 오늘 ${text}! 먹자`;  // ✅ 백틱 사용
 
-
-  resultEl.classList.remove("celebrate"); 
-  void resultEl.offsetWidth; 
+  resultEl.classList.remove("celebrate");
+  void resultEl.offsetWidth;
   resultEl.classList.add("celebrate");
 
   resultEl.style.opacity = 0;
@@ -89,6 +90,7 @@ function showResult(text) {
 
   fireConfetti();
 }
+
 
 
 function spin() {
@@ -110,10 +112,11 @@ function spin() {
   slotStrip.style.transform = "translateY(0px)";
 
   requestAnimationFrame(() => {
-    const spinDuration = 2500 + Math.random() * 1000;
-    slotStrip.style.transition = transform ${spinDuration}ms cubic-bezier(0.2, 0.8, 0.2, 1);
-    slotStrip.style.transform = translateY(${targetY}px);
-  });
+  const spinDuration = 2500 + Math.random() * 1000;
+  slotStrip.style.transition = `transform ${spinDuration}ms cubic-bezier(0.2, 0.8, 0.2, 1)`;  // ✅
+  slotStrip.style.transform = `translateY(${targetY}px)`;  // ✅
+});
+
 
   const onDone = () => {
     slotStrip.removeEventListener("transitionend", onDone);
