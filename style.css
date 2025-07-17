@@ -102,8 +102,13 @@ button:hover {
 }
 
 #result {
-  margin-top: 25px;
-  font-size: 14px;
-  color: #00ffcc;
-  text-shadow: 0 0 5px #00ffe6;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffee66;
+  text-shadow: 0 0 5px #ff6600;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  min-height: 1em; /* 높이 고정해두면 깜빡임 줄어듦 */
 }
+
