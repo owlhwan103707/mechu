@@ -1,6 +1,6 @@
 const MENU_ITEMS = [
   { icon: "😍", label: "라면" },
-  { icon: "😍", label: "물에 밥 비비러" },
+  { icon: "😍", label: "물에 밥 비벼" },
   { icon: "😍", label: "김밥천국" },
   { icon: "😍", label: "교촌치킨" },
   { icon: "😍", label: "풀떼기" },
@@ -31,7 +31,12 @@ const MENU_ITEMS = [
   { icon: "😍", label: "성찬식당" },
   { icon: "😍", label: "라멘" },
   { icon: "😍", label: "햄버거" },
-  { icon: "😍", label: "소고기!!" }
+  { icon: "😍", label: "소고기!!" },
+  { icon: "😍", label: "맥주에 감자튀김" },
+  { icon: "😍", label: "쭈꾸미 볶음" },
+  { icon: "😍", label: "콩나물 불고기" },
+  { icon: "😍", label: "몸도 으슬으슬하니 죽" },
+  { icon: "😍", label: "명량핫도그!" }
 ];
 
 const slotStrip = document.getElementById("slot");
