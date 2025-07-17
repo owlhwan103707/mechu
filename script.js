@@ -86,7 +86,8 @@ function spin() {
 
   const onDone = () => {
     slotStrip.removeEventListener("transitionend", onDone);
-    showResult(pickItem.label);
+    showResult(pickItem.label);       // ⭐️ 결과 보여주기
+    fireConfetti();                   // 💥 폭죽 효과 여기로 옮기기
     isSpinning = false;
     spinBtn.disabled = false;
   };
