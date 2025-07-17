@@ -6,13 +6,16 @@ const MENU_ITEMS = [
   { icon: "🍛", label: "카레" },
   { icon: "🍲", label: "마라탕" },
   { icon: "🍝", label: "파스타" },
-  { icon: "🍱", label: "도시락" }
+  { icon: "🍱", label: "삼겹살" },
+  { icon: "😍", label: "김치찜" },
+  { icon: "😍", label: "묵사발" },
+  { icon: "😍", label: "비냉+고기" }
 ];
 
 const slotStrip = document.getElementById("slot");
 const resultEl = document.getElementById("result");
 const spinBtn = document.querySelector("button");
-let isSpinning = false;
+let isSpinning = false
 const REPEAT_COUNT = 40;
 
 function buildStrip() {
@@ -51,7 +54,7 @@ function fireConfetti() {
 
 
 function showResult(text) {
-  resultEl.textContent = `오늘의 메뉴는 🍽 ${text}!`;
+  resultEl.textContent = `그럼 우리 오늘 ${text}! 먹자`;
 
   resultEl.classList.remove("celebrate"); // 중복 방지
   void resultEl.offsetWidth; // 강제 리플로우로 애니메이션 재적용
