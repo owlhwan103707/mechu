@@ -106,7 +106,7 @@ function spin() {
   slotStrip.addEventListener("transitionend", onDone);
 }
 
-
+//무슨 폭죽 오류인진 몰라도 더블클릭시 폭죽 나오게 설정
 spinBtn.addEventListener("dblclick", () => {
   console.log("💥 직접 폭죽 테스트");
   fireConfetti();
