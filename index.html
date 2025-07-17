@@ -3,27 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>오늘의 메뉴 룰렛</title>
-
-  <!-- Pretendard 폰트 (요즘 감성) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Pretendard&display=swap" rel="stylesheet">
-
-  <!-- 스타일 연결 -->
+  <title>🎰 오늘의 메뉴 슬롯머신</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>🍽 오늘 뭐 먹지? 룰렛 🎡</h1>
-    <div class="roulette-wrapper">
-      <canvas id="roulette" width="300" height="300"></canvas>
-      <div class="arrow">▼</div>
+  <div class="machine">
+    <h1>🎰 오늘의 메뉴 추천기</h1>
+
+    <div class="slot-box">
+      <div class="slot-window">
+        <div class="slot-strip" id="slot">
+          <!-- JavaScript로 동적으로 메뉴 삽입됨 -->
+        </div>
+      </div>
+      <div class="slot-indicator"></div>
     </div>
-    <button onclick="spinRoulette()">돌려!</button>
-    <p id="result" class="fade-in"></p>
+
+    <button onclick="spin()">돌려!</button>
+    <p id="result"></p>
   </div>
 
-  <!-- 스크립트 연결 -->
   <script src="script.js"></script>
 </body>
 </html>
