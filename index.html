@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>Mechu GitHub Page</title>
+  <meta charset="UTF-8" />
+  <title>오늘의 메뉴 룰렛</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Hello, GitHub Pages!</h1>
-  <p>이 페이지는 GitHub에서 호스팅되고 있습니다 🎉</p>
+  <h1>🍽 오늘 뭐 먹지 룰렛 🎡</h1>
+  <div class="roulette-container">
+    <canvas id="roulette" width="300" height="300"></canvas>
+    <button onclick="spinRoulette()">돌려!</button>
+  </div>
+  <p id="result"></p>
+  <script src="script.js"></script>
 </body>
 </html>
