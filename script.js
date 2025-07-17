@@ -48,14 +48,12 @@ function getSlotMetrics() {
 
 /* 결과 텍스트 표시 */
 function showResult(text) {
+  resultEl.classList.remove('fade-in');
   resultEl.textContent = `오늘의 메뉴는 ${text}!`;
-  // 재생성 애니메이션 효과용 강제 리플로우
-  resultEl.style.opacity = 0;
-  // 다음 프레임에 opacity 올리기
-  requestAnimationFrame(() => {
-    resultEl.style.opacity = 1;
-  });
+  void resultEl.offsetWidth;
+  resultEl.classList.add('fade-in');
 }
+
 
 /* 랜덤으로 메뉴 선택 후 해당 위치까지 스크롤 애니메이션 */
 function spin() {
