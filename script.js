@@ -16,7 +16,20 @@ const MENU_ITEMS = [
   { icon: "😍", label: "휫자" },
   { icon: "😍", label: "뿌링뿌링뿌리링" },
   { icon: "😍", label: "삼계tang!" },
-  { icon: "😍", label: "베라??!?!?" }
+  { icon: "😍", label: "베라??!?!?" },
+  { icon: "😍", label: "빙siuuuuuu" },
+  { icon: "😍", label: "중식" },
+  { icon: "😍", label: "봉구스 밥버거" },
+  { icon: "😍", label: "비빔밥" },
+  { icon: "😍", label: "근본제육" },
+  { icon: "😍", label: "평양냉면" },
+  { icon: "😍", label: "오마카세" },
+  { icon: "😍", label: "초밥" },
+  { icon: "😍", label: "국수나무🌲" },
+  { icon: "😍", label: "깨스깨스동깨스" },
+  { icon: "😍", label: "성찬식당" },
+  { icon: "😍", label: "라멘" },
+  { icon: "😍", label: "햄버억" }
 ];
 
 const slotStrip = document.getElementById("slot");
