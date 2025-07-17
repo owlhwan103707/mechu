@@ -112,3 +112,8 @@ button:hover {
   min-height: 1em; /* 높이 고정해두면 깜빡임 줄어듦 */
 }
 
+.fade-in {
+  opacity: 1 !important;
+}
+
+
