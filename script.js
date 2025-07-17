@@ -11,7 +11,12 @@ const MENU_ITEMS = [
   { icon: "😍", label: "묵사발" },
   { icon: "😍", label: "비냉+고기" },
   { icon: "😍", label: "든든한 국밥!" },
-  { icon: "😍", label: "그리운 집밥 ㅠㅠ" }
+  { icon: "😍", label: "그리운 집밥 ㅠㅠ" },
+  { icon: "😍", label: "명륜진사갈비(무실점)" },
+  { icon: "😍", label: "휫자" },
+  { icon: "😍", label: "뿌링뿌링뿌리링" },
+  { icon: "😍", label: "삼계tang!" },
+  { icon: "😍", label: "베라??!?!?" }
 ];
 
 const slotStrip = document.getElementById("slot");
