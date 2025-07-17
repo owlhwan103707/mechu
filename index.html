@@ -11,12 +11,25 @@
     <h1>🎰 오늘의 메뉴 추천기</h1>
 
     <div class="slot-box">
+      <!-- 왼쪽 커스텀 화살표 -->
+      <div class="arrow left-arrow">
+        <svg viewBox="0 0 24 24" width="36" height="36" fill="#ffcc00">
+          <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/>
+        </svg>
+      </div>
+
       <div class="slot-window">
         <div class="slot-strip" id="slot">
-          <!-- JavaScript로 동적으로 메뉴 삽입됨 -->
+          <!-- JS로 삽입 -->
         </div>
       </div>
-      <div class="arrow right-arrow">❯</div> <!-- 오른쪽 화살표 -->
+
+      <!-- 오른쪽 커스텀 화살표 -->
+      <div class="arrow right-arrow">
+        <svg viewBox="0 0 24 24" width="36" height="36" fill="#ffcc00">
+          <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/>
+        </svg>
+      </div>
     </div>
 
     <button onclick="spin()">돌려!</button>
