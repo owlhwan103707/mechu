@@ -93,7 +93,7 @@ function fireConfetti() {
 
 
 function showResult(text) {
-  resultEl.textContent = `그럼 우리 오늘 ${text}! 먹자`;  // ✅ 백틱 사용
+  resultEl.innerHTML = `그럼 우리 오늘<br>${text}! 먹자`;  // ✅ 줄바꿈으로 두 줄 구성
 
   resultEl.classList.remove("celebrate");
   void resultEl.offsetWidth;
@@ -106,6 +106,7 @@ function showResult(text) {
 
   fireConfetti();
 }
+
 
 
 
