@@ -38,7 +38,15 @@ const MENU_ITEMS = [
   { icon: "😍", label: "몸도 으슬으슬하니 죽" },
   { icon: "😍", label: "명랑핫도그!" },
   { icon: "😍", label: "타코야끼" },
-  { icon: "😍", label: "닭볶음탕" }
+  { icon: "😍", label: "닭볶음탕" },
+  { icon: "😍", label: "족발" },
+  { icon: "😍", label: "보쌈" },
+  { icon: "😍", label: "오꼬노미야끼" },
+  { icon: "😍", label: "규카츠" },
+  { icon: "😍", label: "미역국" },
+  { icon: "😍", label: "비빔밥" },
+  { icon: "😍", label: "육개장" },
+  { icon: "😍", label: "구수한 된장찌개" },
 ];
 
 const slotStrip = document.getElementById("slot");
