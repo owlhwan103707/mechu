@@ -47,6 +47,8 @@ const MENU_ITEMS = [
   { icon: "😍", label: "비빔밥" },
   { icon: "😍", label: "육개장" },
   { icon: "😍", label: "구수한 된장찌개" },
+  { icon: "😍", label: "전" },
+  { icon: "😍", label: "고모네 칼국수" },
 ];
 
 const slotStrip = document.getElementById("slot");
